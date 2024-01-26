@@ -17,10 +17,11 @@ public class Main {
 
         InterfaceManager interfaceManager = new InterfaceManager();
         Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to your daily journal!");
 
         //infinite loop for a menu
         while (true) {
-            System.out.println("Welcome to your daily journal! What do you want to write about today? " +
+            System.out.println("What do you want to write about today? " +
                                 "Select the type of prompt: Beginner (BG), Brainstorming (BR), Daily Journal (DJ), " +
                                 "Creative Writing (CW), Body Positivity (BP): ");
 

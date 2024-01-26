@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This is version of my project without working search. Unit tests are also still pending a review.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2bJVmJte4EqG2zD3tGY9l7dWXmK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.NoteServiceTest.deleteEntryInvalidIndex.executor": "Run",
+    "JUnit.NoteServiceTest.executor": "Coverage",
+    "JUnit.NoteServiceTest.interpretDeleteActionDoubleInsteadOfInt.executor": "Run",
+    "JUnit.NoteServiceTest.noteServiceEmptyAtStart.executor": "Run",
+    "JUnit.NoteServiceTest.noteServiceSaveNote.executor": "Run",
+    "JUnit.NoteServiceTest.noteServiceUpdateNote.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/A178393/IdeaProjects/Project0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/A178393/IdeaProjects/Project0/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\A178393\IdeaProjects\Project0\src\main\java\org\example\Service" />
+      <recent name="C:\Users\A178393\IdeaProjects\Project0\src\main\java\org\example" />
+      <recent name="C:\Users\A178393\IdeaProjects\Project0" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.NoteServiceTest.noteServiceEmptyAtStart">
+    <configuration name="NoteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project0" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceTest.interpretDeleteActionDoubleInsteadOfInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project0" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
+      <option name="METHOD_NAME" value="interpretDeleteActionDoubleInsteadOfInt" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceTest.noteServiceEmptyAtStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project0" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
+      <option name="METHOD_NAME" value="noteServiceEmptyAtStart" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceTest.noteServiceSaveNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project0" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
+      <option name="METHOD_NAME" value="noteServiceSaveNote" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteServiceTest.noteServiceUpdateNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project0" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
+      <option name="METHOD_NAME" value="noteServiceUpdateNote" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.NoteServiceTest.noteServiceEmptyAtStart" />
+        <item itemvalue="JUnit.NoteServiceTest" />
+        <item itemvalue="JUnit.NoteServiceTest.noteServiceUpdateNote" />
+        <item itemvalue="JUnit.NoteServiceTest.noteServiceSaveNote" />
+        <item itemvalue="JUnit.NoteServiceTest.interpretDeleteActionDoubleInsteadOfInt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
+        <option value="jdk-21.0.1-azul-21.0.1-f644763e9732-5de7a7d0" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="" />
+      <created>1705933329336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705933329336</updated>
+      <workItem from="1705933330389" duration="38198000" />
+      <workItem from="1706127671152" duration="35006000" />
+    </task>
+    <task id="LOCAL-00001" summary="This is version of my project without working search. Unit tests are also still pending a review.">
+      <option name="closed" value="true" />
+      <created>1706276490306</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706276490306</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="This is version of my project without working search. Unit tests are also still pending a review." />
+    <option name="LAST_COMMIT_MESSAGE" value="This is version of my project without working search. Unit tests are also still pending a review." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Model/NoteEntry.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Project0$NoteServiceTest.ic" NAME="NoteServiceTest Coverage Results" MODIFIED="1706285763142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
