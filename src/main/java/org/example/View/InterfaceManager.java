@@ -7,6 +7,8 @@ import org.example.Service.NoteService;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static org.example.Service.Main.promptMenu;
+
 public class InterfaceManager {
 
     NoteService noteService = new NoteService();
@@ -127,6 +129,7 @@ public class InterfaceManager {
 
         if (command.equals("NEW")) {
             //go back to the main menu
+            promptMenu();
 
         } else if (command.equals("VIEW")) {
             noteService.displayEntries();

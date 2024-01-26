@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This is version of my project without working search. Unit tests are also still pending a review.">
+    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This is version of my project contains working search and completed unit tests.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "JUnit.NoteServiceTest.deleteEntryInvalidIndex.executor": "Run",
     "JUnit.NoteServiceTest.deleteEntryInvalidIndex2.executor": "Run",
     "JUnit.NoteServiceTest.executor": "Run",
@@ -84,7 +80,7 @@
       <recent name="C:\Users\A178393\IdeaProjects\Project0" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NoteServiceTest.noteServiceSearch2">
+  <component name="RunManager">
     <configuration name="NoteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
@@ -163,7 +159,7 @@
       <updated>1705933329336</updated>
       <workItem from="1705933330389" duration="38198000" />
       <workItem from="1706127671152" duration="41427000" />
-      <workItem from="1706293425238" duration="7348000" />
+      <workItem from="1706293425238" duration="8201000" />
     </task>
     <task id="LOCAL-00001" summary="This is version of my project without working search. Unit tests are also still pending a review.">
       <option name="closed" value="true" />
@@ -173,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706276490306</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="This is version of my project contains working search and completed unit tests.">
+      <option name="closed" value="true" />
+      <created>1706305043187</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706305043187</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +196,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This is version of my project without working search. Unit tests are also still pending a review." />
-    <option name="LAST_COMMIT_MESSAGE" value="This is version of my project without working search. Unit tests are also still pending a review." />
+    <MESSAGE value="This is version of my project contains working search and completed unit tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="This is version of my project contains working search and completed unit tests." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -201,6 +206,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
           <line>89</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/Main.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/Main.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
