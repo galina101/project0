@@ -1,5 +1,6 @@
 package org.example.Service;
 
+import org.example.Exception.NoteException;
 import org.example.Model.NoteEntry;
 
 import java.sql.Timestamp;
@@ -12,7 +13,7 @@ public class NoteService {
     List<NoteEntry> entries;
 
     /**
-     * my entry list
+     * my journal entry list
      * 1 -> {noteText:"hello", time:11:02}
      * 2 -> {noteText:"hello2", time:11:23}
      */
@@ -36,8 +37,7 @@ public class NoteService {
         System.out.println("The note #" + (index + 1) + " was updated.");
     }
 
-
-    public void deleteNote(int index) {
+    public void deleteNote(int index) throws NoteException {
 
         try {
             Main.log.warn("We are about to delete " + index);
@@ -48,11 +48,10 @@ public class NoteService {
             this.entries.remove(index);
             System.out.println("The note #" + (index + 1) + " was deleted.");
 
-        } catch (ArrayIndexOutOfBoundsException e) {
+        } catch (IndexOutOfBoundsException e) {
             System.out.println("No such entry exists. Please type a valid entry number.");
+            throw new NoteException("Delete failed.");
         }
-
-        //this.entries.displayEntries();
     }
 
     /**
@@ -77,30 +76,19 @@ public class NoteService {
         return null;
     }
 
-    //UNDER CONSTRUCTION
-    public NoteEntry searchEntries(String searchWord) {
-        ListIterator<NoteEntry> listIterator = entries.listIterator();
 
+    public NoteEntry searchEntries(String searchWord) {
 
         for (int i = 0; i < entries.size(); i = i + 1) {
-//
             NoteEntry currentEntry = entries.get(i);
-//
-            if (currentEntry.getNoteText().equals(searchWord)) {
-//
+            Main.log.warn ("Currently searching for "+ searchWord + " in the following entry: " + entries.get(i));
+            //System.out.println("Entries.get(i): " + entries.get(i));
+           // System.out.println("currentEntry.getNoteText(): " + currentEntry.getNoteText());
+
+            String currentEntryText = currentEntry.getNoteText();
+            if (currentEntryText.contains(searchWord)) {
                 return currentEntry;
             }
-
-
-//        while (listIterator.hasNext()) {
-//           NoteEntry currentEntry = this.entries.get(listIterator.nextIndex());
-//
-//            if (currentEntry.getNoteText().equals(searchWord)){
-//                return currentEntry.getNoteText();
-//            }
-//            //System.out.println((listIterator.nextIndex()+1) + ": " + listIterator.next());
-//        }
-
         }
         return null;
     }

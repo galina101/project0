@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This is version of my project without working search. Unit tests are also still pending a review.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +47,16 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.NoteServiceTest.deleteEntryInvalidIndex.executor": "Run",
-    "JUnit.NoteServiceTest.executor": "Coverage",
+    "JUnit.NoteServiceTest.deleteEntryInvalidIndex2.executor": "Run",
+    "JUnit.NoteServiceTest.executor": "Run",
     "JUnit.NoteServiceTest.interpretDeleteActionDoubleInsteadOfInt.executor": "Run",
+    "JUnit.NoteServiceTest.noteServiceDeleteMultipleNotes.executor": "Run",
+    "JUnit.NoteServiceTest.noteServiceDeleteNote.executor": "Run",
+    "JUnit.NoteServiceTest.noteServiceDeleteNote3.executor": "Run",
     "JUnit.NoteServiceTest.noteServiceEmptyAtStart.executor": "Run",
     "JUnit.NoteServiceTest.noteServiceSaveNote.executor": "Run",
+    "JUnit.NoteServiceTest.noteServiceSearch.executor": "Run",
+    "JUnit.NoteServiceTest.noteServiceSearch2.executor": "Run",
     "JUnit.NoteServiceTest.noteServiceUpdateNote.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -71,7 +84,7 @@
       <recent name="C:\Users\A178393\IdeaProjects\Project0" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NoteServiceTest.noteServiceEmptyAtStart">
+  <component name="RunManager" selected="JUnit.NoteServiceTest.noteServiceSearch2">
     <configuration name="NoteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
@@ -81,41 +94,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteServiceTest.interpretDeleteActionDoubleInsteadOfInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoteServiceTest.deleteEntryInvalidIndex2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
-      <option name="METHOD_NAME" value="interpretDeleteActionDoubleInsteadOfInt" />
+      <option name="METHOD_NAME" value="deleteEntryInvalidIndex2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteServiceTest.noteServiceEmptyAtStart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoteServiceTest.noteServiceDeleteNote3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
-      <option name="METHOD_NAME" value="noteServiceEmptyAtStart" />
+      <option name="METHOD_NAME" value="noteServiceDeleteNote3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteServiceTest.noteServiceSaveNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoteServiceTest.noteServiceSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
-      <option name="METHOD_NAME" value="noteServiceSaveNote" />
+      <option name="METHOD_NAME" value="noteServiceSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteServiceTest.noteServiceUpdateNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoteServiceTest.noteServiceSearch2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
-      <option name="METHOD_NAME" value="noteServiceUpdateNote" />
+      <option name="METHOD_NAME" value="noteServiceSearch2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,17 +136,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NoteServiceTest.noteServiceEmptyAtStart" />
+        <item itemvalue="JUnit.NoteServiceTest.noteServiceSearch2" />
         <item itemvalue="JUnit.NoteServiceTest" />
-        <item itemvalue="JUnit.NoteServiceTest.noteServiceUpdateNote" />
-        <item itemvalue="JUnit.NoteServiceTest.noteServiceSaveNote" />
-        <item itemvalue="JUnit.NoteServiceTest.interpretDeleteActionDoubleInsteadOfInt" />
+        <item itemvalue="JUnit.NoteServiceTest.noteServiceSearch" />
+        <item itemvalue="JUnit.NoteServiceTest.noteServiceDeleteNote3" />
+        <item itemvalue="JUnit.NoteServiceTest.deleteEntryInvalidIndex2" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-11.0.21-azul-11.0.21-f644763e9732-8ac41994" />
         <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
         <option value="jdk-21.0.1-azul-21.0.1-f644763e9732-5de7a7d0" />
       </set>
@@ -148,7 +162,8 @@
       <option name="presentableId" value="Default" />
       <updated>1705933329336</updated>
       <workItem from="1705933330389" duration="38198000" />
-      <workItem from="1706127671152" duration="35006000" />
+      <workItem from="1706127671152" duration="41427000" />
+      <workItem from="1706293425238" duration="7348000" />
     </task>
     <task id="LOCAL-00001" summary="This is version of my project without working search. Unit tests are also still pending a review.">
       <option name="closed" value="true" />
@@ -183,14 +198,23 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Model/NoteEntry.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
+          <line>79</line>
+          <properties class="org.example.Service.NoteService" method="searchEntries">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Project0$NoteServiceTest.ic" NAME="NoteServiceTest Coverage Results" MODIFIED="1706285763142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Project0$NoteServiceTest.ic" NAME="NoteServiceTest Coverage Results" MODIFIED="1706302306654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

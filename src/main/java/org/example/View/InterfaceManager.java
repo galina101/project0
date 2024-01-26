@@ -1,5 +1,6 @@
 package org.example.View;
 import org.example.Exception.InterfaceManagerException;
+import org.example.Exception.NoteException;
 import org.example.Model.NoteEntry;
 import org.example.Model.Prompt;
 import org.example.Service.NoteService;
@@ -57,7 +58,7 @@ public class InterfaceManager {
     }
 
 
-    public void interpretDeleteAction() throws IndexOutOfBoundsException {
+    public void interpretDeleteAction() throws NoteException {
         System.out.println("What entry number do you want to delete?");
         System.out.println("Enter a number from 1 to " + noteService.getEntriesLength() + ". ");
         userInput = sc.nextLine();
@@ -71,7 +72,7 @@ public class InterfaceManager {
             System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             System.out.println("!!! Wrong input. Integers only");
             System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        } catch (IndexOutOfBoundsException e) {
+        } catch (NoteException e) {
             System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             System.out.println("!!!No such entry exists. Please type a valid entry number.");
             System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
@@ -110,8 +111,8 @@ public class InterfaceManager {
 
         NoteEntry entryFound = noteService.searchEntries(userInput);
 
-
         if (entryFound != null) {
+            System.out.println("Entry found: ");
             System.out.println(entryFound.toString());
         }
         else if (entryFound == null) {
@@ -121,7 +122,7 @@ public class InterfaceManager {
 
     }
 
-    public void ValidateCLIInput (String userInput) throws InterfaceManagerException {
+    public void ValidateCLIInput (String userInput) throws InterfaceManagerException, NoteException {
         String command = userInput.toUpperCase();
 
         if (command.equals("NEW")) {
@@ -153,8 +154,6 @@ public class InterfaceManager {
 
             //display the entry found
             System.out.println("");
-            System.out.println("Here is what in your journal now: ");
-            //noteService.displayEntries();
         }
         else {
             throw new InterfaceManagerException("Invalid input. Going back to daily journal prompt.");

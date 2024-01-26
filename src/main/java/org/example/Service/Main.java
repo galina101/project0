@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 public class Main {
 
     public static Logger log = LoggerFactory.getLogger(Main.class);
-    public static void main(String[] args) throws InterfaceManagerException, IndexOutOfBoundsException {
+    public static void main(String[] args) throws InterfaceManagerException, IndexOutOfBoundsException, NoteException {
 
         InterfaceManager interfaceManager = new InterfaceManager();
         Scanner sc = new Scanner(System.in);
@@ -28,7 +28,8 @@ public class Main {
             String userInput = sc.nextLine();
             interfaceManager.inputToPrompt(userInput);
 
-            System.out.println("What do you want to do now? New entry (New), view all entries (View), update an entry (Update), search (Search) or delete (Delete)?");
+            System.out.println("What do you want to do now? New entry (New), view all entries (View), " +
+                            "update an entry (Update), search (Search) or delete (Delete)?");
             userInput = sc.nextLine();
             interfaceManager.ValidateCLIInput(userInput);
             }
