@@ -5,6 +5,8 @@ import org.example.Service.NoteService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -20,7 +22,7 @@ public class NoteServiceTest {
     @Test
     public void noteServiceEmptyAtStart () {
         List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
-        Assert.assertTrue(noteEntriesTest.size() == 0);
+        Assert.assertEquals(0, noteEntriesTest.size());
     }
 
     //Add a journal entry
@@ -30,7 +32,7 @@ public class NoteServiceTest {
         String noteText = "Test Entry";
         noteServiceTest.saveNote(noteText);
 
-        Assert.assertTrue(noteEntriesTest.size() > 0);
+        Assert.assertFalse(noteEntriesTest.isEmpty());
     }
 
     //Delete a journal entry
@@ -42,7 +44,7 @@ public class NoteServiceTest {
         noteServiceTest.saveNote("This is an entry #1.");
         noteServiceTest.deleteNote(index);
 
-        Assert.assertTrue(noteEntriesTest.size() == 0);
+        Assert.assertTrue(noteEntriesTest.isEmpty());
     }
     //Delete multiple journal entries
     @Test
@@ -61,7 +63,6 @@ public class NoteServiceTest {
 
     @Test
     public void noteServiceUpdateNote() {
-        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
         int index = 2;
 
         noteServiceTest.saveNote("This is an entry #1.");
@@ -86,7 +87,6 @@ public class NoteServiceTest {
     @Test (expected = NoteException.class)
     public void deleteEntryInvalidIndex1 () throws NoteException {
 
-        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
         int index = -1;
 
         noteServiceTest.saveNote("This is an entry #1.");
@@ -99,7 +99,6 @@ public class NoteServiceTest {
     @Test (expected = NoteException.class)
     public void deleteEntryInvalidIndex2 () throws NoteException{
 
-        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
         int index = 3;
 
         noteServiceTest.saveNote("This is an entry #1.");
@@ -110,7 +109,6 @@ public class NoteServiceTest {
     }
     @Test
     public void noteServiceDeleteNote3() throws NoteException {
-        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
         int index = 2;
 
         noteServiceTest.saveNote("This is an entry #1.");
@@ -126,19 +124,31 @@ public class NoteServiceTest {
         Assert.assertEquals(actual, expected);
     }
 
-//    @Test
-//    public void noteServiceSearch(){
-//        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
-//        noteServiceTest.saveNote("This is an entry #1.");
-//        noteServiceTest.saveNote("This is an entry #2.");
-//        noteServiceTest.saveNote("This is an entry #3.");
-//
-//        String searchWord = "2";
-//        NoteEntry actual = noteServiceTest.searchEntries(searchWord);
-//
-//
-//        Assert.assertTrue(actual.getNoteText().contains(searchWord));
-//    }
+    @Test
+    public void noteServiceSearch(){
+        noteServiceTest.saveNote("This is an entry #1.");
+        noteServiceTest.saveNote("This is an entry #2.");
+        noteServiceTest.saveNote("This is an entry #3.");
+
+        String searchWord = "2";
+        ArrayList actual = noteServiceTest.searchEntries(searchWord);
+
+
+        Assert.assertFalse(actual.isEmpty());
+    }
+
+    @Test
+    public void noteNegativeServiceSearch(){
+        noteServiceTest.saveNote("This is an entry #1.");
+        noteServiceTest.saveNote("This is an entry #2.");
+        noteServiceTest.saveNote("This is an entry #3.");
+
+        String searchWord = "4";
+        ArrayList actual = noteServiceTest.searchEntries(searchWord);
+
+
+        Assert.assertTrue(actual.isEmpty());
+    }
 
     //confirm that the method can handle null
 //
@@ -161,8 +171,6 @@ public class NoteServiceTest {
         int expected = 3;
         int actual;
 
-        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
-
         noteServiceTest.saveNote("This is an entry #1.");
         noteServiceTest.saveNote("This is an entry #2.");
         noteServiceTest.saveNote("This is an entry #3.");
@@ -177,7 +185,6 @@ public class NoteServiceTest {
         List<NoteEntry> expected;
         List<NoteEntry> actual;
 
-        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
         String searchWord = "an";
         NoteEntry currentEntry;
         boolean containsExpectedSearchWord;
@@ -202,7 +209,7 @@ public class NoteServiceTest {
             currentEntry = actual.get(i);
             String currentEntryText = currentEntry.getNoteText();
             containsExpectedSearchWord = currentEntryText.contains("an");
-            //searchWord
+            //if containsExpectedSearchWord is true for all the 3 cases, then the test passes
         }
         //expected that 3 ArrayList<NoteEntry> are returned
 

@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This version attempts to return multiple entries from the search method">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_29_2024_9_54_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_29_2024_9_54_AM__Changes_.xml" afterDir="false" />
+    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This version contains a unit test verifying the search method that returns multiple values">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/NoteEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/NoteEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +51,7 @@
     "JUnit.NoteServiceTest.deleteEntryInvalidIndex2.executor": "Run",
     "JUnit.NoteServiceTest.executor": "Coverage",
     "JUnit.NoteServiceTest.interpretDeleteActionDoubleInsteadOfInt.executor": "Run",
+    "JUnit.NoteServiceTest.noteNegativeServiceSearch.executor": "Run",
     "JUnit.NoteServiceTest.noteServiceDeleteMultipleNotes.executor": "Run",
     "JUnit.NoteServiceTest.noteServiceDeleteNote.executor": "Run",
     "JUnit.NoteServiceTest.noteServiceDeleteNote3.executor": "Run",
@@ -98,11 +97,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteServiceTest.noteServiceDeleteNote3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoteServiceTest.noteNegativeServiceSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
-      <option name="METHOD_NAME" value="noteServiceDeleteNote3" />
+      <option name="METHOD_NAME" value="noteNegativeServiceSearch" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,11 +117,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteServiceTest.noteServiceSearch2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="NoteServiceTest.noteServiceUpdateNote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="NoteServiceTest" />
-      <option name="METHOD_NAME" value="noteServiceSearch2" />
+      <option name="METHOD_NAME" value="noteServiceUpdateNote" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,10 +140,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.NoteServiceTest" />
-        <item itemvalue="JUnit.NoteServiceTest.searchMethodTest" />
-        <item itemvalue="JUnit.NoteServiceTest.noteServiceSearch2" />
+        <item itemvalue="JUnit.NoteServiceTest.noteNegativeServiceSearch" />
         <item itemvalue="JUnit.NoteServiceTest.noteServiceSearch" />
-        <item itemvalue="JUnit.NoteServiceTest.noteServiceDeleteNote3" />
+        <item itemvalue="JUnit.NoteServiceTest.noteServiceUpdateNote" />
+        <item itemvalue="JUnit.NoteServiceTest.searchMethodTest" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706545991945</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="This version contains a unit test verifying the search method that returns multiple values">
+      <option name="closed" value="true" />
+      <created>1706564574618</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706564574618</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,14 +240,15 @@
     <MESSAGE value="This version added non-case sensitive search" />
     <MESSAGE value="This version added an exit to the menu option" />
     <MESSAGE value="This version attempts to return multiple entries from the search method" />
-    <option name="LAST_COMMIT_MESSAGE" value="This version attempts to return multiple entries from the search method" />
+    <MESSAGE value="This version contains a unit test verifying the search method that returns multiple values" />
+    <option name="LAST_COMMIT_MESSAGE" value="This version contains a unit test verifying the search method that returns multiple values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Model/NoteEntry.java</url>
-          <line>38</line>
+          <line>30</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -260,18 +268,36 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/NoteServiceTest.java</url>
-          <line>176</line>
+          <line>183</line>
           <properties class="NoteServiceTest" method="searchMethodTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/NoteServiceTest.java</url>
+          <line>64</line>
+          <properties class="NoteServiceTest" method="noteServiceUpdateNote">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/NoteServiceTest.java</url>
+          <line>140</line>
+          <properties class="NoteServiceTest" method="noteNegativeServiceSearch">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Project0$NoteServiceTest.ic" NAME="NoteServiceTest Coverage Results" MODIFIED="1706562787605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Project0$NoteServiceTest.ic" NAME="NoteServiceTest Coverage Results" MODIFIED="1706564481016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Project0$NoteServiceTest_searchMethodTest.ic" NAME="NoteServiceTest.searchMethodTest Coverage Results" MODIFIED="1706563848757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
