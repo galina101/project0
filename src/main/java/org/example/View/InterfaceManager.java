@@ -120,8 +120,12 @@ public class InterfaceManager {
         else if (entryFound == null) {
             System.out.println("No entries found.");
         }
-
-
+    }
+    public void interpretExitAction() {
+        System.out.println("Enter your thoughts below:");
+        String userEntry = sc.nextLine();
+        noteService.saveNote(userEntry);
+        System.out.println("Entry saved!");
     }
 
     public void ValidateCLIInput (String userInput) throws InterfaceManagerException, NoteException {
@@ -158,8 +162,12 @@ public class InterfaceManager {
             //display the entry found
             System.out.println("");
         }
+        else if (command.equals("EXIT")) {
+            System.exit(0);
+        }
         else {
             throw new InterfaceManagerException("Invalid input. Going back to daily journal prompt.");
+
         }
 
     }

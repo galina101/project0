@@ -1,14 +1,1 @@
-WARN	2024-01-29 10:02:13,617	0	org.example.Service.Main	[main]	Random integer for today is 7
-WARN	2024-01-29 10:02:22,055	8438	org.example.Service.Main	[main]	Random integer for today is 2
-WARN	2024-01-29 10:02:54,636	41019	org.example.Service.Main	[main]	Currently searching for SQL in the following entry: Journal entry created on 2024-01-29 10:02:16.443.
-Journal entry content: Java
-=============================================================
-WARN	2024-01-29 10:02:54,637	41020	org.example.Service.Main	[main]	Currently searching for SQL in the following entry: Journal entry created on 2024-01-29 10:02:31.17.
-Journal entry content: SQL
-=============================================================
-WARN	2024-01-29 10:03:00,685	47068	org.example.Service.Main	[main]	Currently searching for sql in the following entry: Journal entry created on 2024-01-29 10:02:16.443.
-Journal entry content: Java
-=============================================================
-WARN	2024-01-29 10:03:00,685	47068	org.example.Service.Main	[main]	Currently searching for sql in the following entry: Journal entry created on 2024-01-29 10:02:31.17.
-Journal entry content: SQL
-=============================================================
+WARN	2024-01-29 11:25:08,855	0	org.example.Service.Main	[main]	Random integer for today is 8

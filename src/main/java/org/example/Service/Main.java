@@ -16,7 +16,6 @@ public class Main {
     public static Logger log = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) throws InterfaceManagerException, IndexOutOfBoundsException, NoteException {
 
-      //  InterfaceManager interfaceManager = new InterfaceManager();
         Scanner sc = new Scanner(System.in);
         String userInput;
         System.out.println("Welcome to your daily journal!");
@@ -26,8 +25,10 @@ public class Main {
         //infinite loop for a menu
         while (true) {
 
-            System.out.println("What do you want to do now? New entry (New), view all entries (View), " +
-                            "update an entry (Update), search (Search) or delete (Delete)?");
+            System.out.println("What do you want to do now? " + "\n" +
+                    "New entry (New), " +
+                    "View all entries (View), " +
+                            "Update an entry (Update), Search (Search), Delete (Delete) or Exit (Exit)");
             userInput = sc.nextLine();
             interfaceManager.ValidateCLIInput(userInput);
             }
@@ -39,7 +40,6 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         String userInput;
-       // InterfaceManager interfaceManager = new InterfaceManager();
 
         userInput = sc.nextLine();
         interfaceManager.inputToPrompt(userInput);
