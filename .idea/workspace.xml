@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This is version of my project without working search. Unit tests are also still pending a review.">
+    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This version attempts to return multiple entries from the search method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -61,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "menuRefactor",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/A178393/IdeaProjects/Project0",
     "node.js.detected.package.eslint": "true",
@@ -84,7 +84,7 @@
       <recent name="C:\Users\A178393\IdeaProjects\Project0" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NoteServiceTest.noteServiceSearch2">
+  <component name="RunManager">
     <configuration name="NoteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Project0" />
       <option name="PACKAGE_NAME" value="" />
@@ -137,10 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.NoteServiceTest.noteServiceSearch2" />
-        <item itemvalue="JUnit.NoteServiceTest" />
         <item itemvalue="JUnit.NoteServiceTest.noteServiceSearch" />
         <item itemvalue="JUnit.NoteServiceTest.noteServiceDeleteNote3" />
         <item itemvalue="JUnit.NoteServiceTest.deleteEntryInvalidIndex2" />
+        <item itemvalue="JUnit.NoteServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +163,7 @@
       <updated>1705933329336</updated>
       <workItem from="1705933330389" duration="38198000" />
       <workItem from="1706127671152" duration="41427000" />
-      <workItem from="1706293425238" duration="7348000" />
+      <workItem from="1706293425238" duration="8201000" />
     </task>
     <task id="LOCAL-00001" summary="This is version of my project without working search. Unit tests are also still pending a review.">
       <option name="closed" value="true" />
@@ -173,7 +173,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706276490306</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="This is version of my project contains working search and completed unit tests.">
+      <option name="closed" value="true" />
+      <created>1706305043187</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706305043187</updated>
+    </task>
+    <task id="LOCAL-00003" summary="This version completed the refactor of the menu logic by making InterfaceManager static">
+      <option name="closed" value="true" />
+      <created>1706540901082</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706540901082</updated>
+    </task>
+    <task id="LOCAL-00004" summary="This version added non-case sensitive search">
+      <option name="closed" value="true" />
+      <created>1706541516257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706541516257</updated>
+    </task>
+    <task id="LOCAL-00005" summary="This version added an exit to the menu option">
+      <option name="closed" value="true" />
+      <created>1706545991945</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706545991945</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,27 +224,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This is version of my project without working search. Unit tests are also still pending a review." />
-    <option name="LAST_COMMIT_MESSAGE" value="This is version of my project without working search. Unit tests are also still pending a review." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
-          <line>79</line>
-          <properties class="org.example.Service.NoteService" method="searchEntries">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="This is version of my project contains working search and completed unit tests." />
+    <MESSAGE value="This version completed the refactor of the menu logic by making InterfaceManager static" />
+    <MESSAGE value="This version added non-case sensitive search" />
+    <MESSAGE value="This version added an exit to the menu option" />
+    <MESSAGE value="This version attempts to return multiple entries from the search method" />
+    <option name="LAST_COMMIT_MESSAGE" value="This version attempts to return multiple entries from the search method" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project0$NoteServiceTest.ic" NAME="NoteServiceTest Coverage Results" MODIFIED="1706302306654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

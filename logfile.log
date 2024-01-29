@@ -1,9 +1,1 @@
-WARN	2024-01-26 16:34:57,604	0	org.example.Service.Main	[main]	Currently searching for add in the following entry: Journal entry created on 2024-01-26 16:34:57.494.
-Journal entry content: This is an entry #1.
-=============================================================
-WARN	2024-01-26 16:34:57,604	0	org.example.Service.Main	[main]	Currently searching for add in the following entry: Journal entry created on 2024-01-26 16:34:57.495.
-Journal entry content: This is an entry #2.
-=============================================================
-WARN	2024-01-26 16:34:57,604	0	org.example.Service.Main	[main]	Currently searching for add in the following entry: Journal entry created on 2024-01-26 16:34:57.495.
-Journal entry content: This is an entry #3.
-=============================================================
+WARN	2024-01-29 11:25:08,855	0	org.example.Service.Main	[main]	Random integer for today is 8

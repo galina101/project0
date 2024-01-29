@@ -77,19 +77,36 @@ public class NoteService {
     }
 
 
-    public NoteEntry searchEntries(String searchWord) {
+    public ArrayList<NoteEntry> searchEntries(String searchWord) {
 
+       List <NoteEntry> entriesFound = null;
+        NoteEntry currentEntry;
+        ListIterator<NoteEntry> entriesFoundListIterator = entriesFound.listIterator();
+
+        //Search
         for (int i = 0; i < entries.size(); i = i + 1) {
-            NoteEntry currentEntry = entries.get(i);
+            currentEntry = entries.get(i);
             Main.log.warn ("Currently searching for "+ searchWord + " in the following entry: " + entries.get(i));
             //System.out.println("Entries.get(i): " + entries.get(i));
            // System.out.println("currentEntry.getNoteText(): " + currentEntry.getNoteText());
 
             String currentEntryText = currentEntry.getNoteText();
+
+            //convert both strings to lower case for non-case sensitive search
+            searchWord = searchWord.toLowerCase();
+            currentEntryText = searchWord.toLowerCase();
+
             if (currentEntryText.contains(searchWord)) {
-                return currentEntry;
+                //add entry to the array of NoteEntry
+                entriesFound.add(currentEntry);
+            }
+
+            //Display
+            while (entriesFoundListIterator.hasNext()) {
+                System.out.println((entriesFoundListIterator.nextIndex() + 1) + ": " + entriesFoundListIterator.next());
             }
         }
+
         return null;
     }
 }

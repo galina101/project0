@@ -4,8 +4,12 @@ import org.example.Exception.NoteException;
 import org.example.Model.NoteEntry;
 import org.example.Model.Prompt;
 import org.example.Service.NoteService;
+
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import static org.example.Service.Main.promptMenu;
 
 public class InterfaceManager {
 
@@ -109,17 +113,21 @@ public class InterfaceManager {
         System.out.println("The search is completed by content. Enter a string you want to search by: ");
         userInput = sc.nextLine();
 
-        NoteEntry entryFound = noteService.searchEntries(userInput);
+        ArrayList<NoteEntry> entryFound = noteService.searchEntries(userInput);
 
-        if (entryFound != null) {
+        if (entryFound.size >0 ) {
             System.out.println("Entry found: ");
             System.out.println(entryFound.toString());
         }
-        else if (entryFound == null) {
+        else if (entryFound.size == 0) {
             System.out.println("No entries found.");
         }
-
-
+    }
+    public void interpretExitAction() {
+        System.out.println("Enter your thoughts below:");
+        String userEntry = sc.nextLine();
+        noteService.saveNote(userEntry);
+        System.out.println("Entry saved!");
     }
 
     public void ValidateCLIInput (String userInput) throws InterfaceManagerException, NoteException {
@@ -127,6 +135,7 @@ public class InterfaceManager {
 
         if (command.equals("NEW")) {
             //go back to the main menu
+            promptMenu();
 
         } else if (command.equals("VIEW")) {
             noteService.displayEntries();
@@ -155,8 +164,12 @@ public class InterfaceManager {
             //display the entry found
             System.out.println("");
         }
+        else if (command.equals("EXIT")) {
+            System.exit(0);
+        }
         else {
             throw new InterfaceManagerException("Invalid input. Going back to daily journal prompt.");
+
         }
 
     }
