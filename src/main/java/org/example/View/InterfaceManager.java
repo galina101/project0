@@ -115,11 +115,11 @@ public class InterfaceManager {
 
         ArrayList<NoteEntry> entryFound = noteService.searchEntries(userInput);
 
-        if (entryFound.size >0 ) {
+        if (!entryFound.isEmpty()) {
             System.out.println("Entry found: ");
             System.out.println(entryFound.toString());
         }
-        else if (entryFound.size == 0) {
+        else if (entryFound.isEmpty()) {
             System.out.println("No entries found.");
         }
     }
@@ -160,15 +160,12 @@ public class InterfaceManager {
         }
         else if (command.equals("SEARCH")){
             interpretSearchAction();
-
-            //display the entry found
-            System.out.println("");
         }
         else if (command.equals("EXIT")) {
             System.exit(0);
         }
         else {
-            throw new InterfaceManagerException("Invalid input. Going back to daily journal prompt.");
+            System.out.println("Invalid input. Going back to daily journal prompt.");
 
         }
 

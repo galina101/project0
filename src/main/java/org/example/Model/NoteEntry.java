@@ -36,9 +36,8 @@ public class NoteEntry {
 
     @Override
     public String toString() {
-        return //"Journal entry number #: " + entryNumber + ".\n"+
-                "Journal entry created on " + time + ".\n" +
+        return  "Journal entry created on " + time + ".\n" +
                 "Journal entry content: "+ noteText + "\n" +
-                "=============================================================";
+                "=============================================================" + "\n";
     }
 }

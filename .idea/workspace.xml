@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This version attempts to return multiple entries from the search method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/NoteEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/NoteEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NoteServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="45e5ecc2c093156f98ae2c851df401cd1e7711c8" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "JUnit.NoteServiceTest.deleteEntryInvalidIndex.executor": "Run",
     "JUnit.NoteServiceTest.deleteEntryInvalidIndex2.executor": "Run",
     "JUnit.NoteServiceTest.executor": "Run",
@@ -61,7 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "menuRefactor",
+    "git-widget-placeholder": "7168ceae",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/A178393/IdeaProjects/Project0",
     "node.js.detected.package.eslint": "true",
@@ -230,6 +233,37 @@
     <MESSAGE value="This version added an exit to the menu option" />
     <MESSAGE value="This version attempts to return multiple entries from the search method" />
     <option name="LAST_COMMIT_MESSAGE" value="This version attempts to return multiple entries from the search method" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Model/NoteEntry.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Project0$NoteServiceTest.ic" NAME="NoteServiceTest Coverage Results" MODIFIED="1706302306654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
