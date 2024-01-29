@@ -4,6 +4,8 @@ import org.example.Exception.NoteException;
 import org.example.Model.NoteEntry;
 import org.example.Model.Prompt;
 import org.example.Service.NoteService;
+
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -111,13 +113,13 @@ public class InterfaceManager {
         System.out.println("The search is completed by content. Enter a string you want to search by: ");
         userInput = sc.nextLine();
 
-        NoteEntry entryFound = noteService.searchEntries(userInput);
+        ArrayList<NoteEntry> entryFound = noteService.searchEntries(userInput);
 
-        if (entryFound != null) {
+        if (entryFound.size >0 ) {
             System.out.println("Entry found: ");
             System.out.println(entryFound.toString());
         }
-        else if (entryFound == null) {
+        else if (entryFound.size == 0) {
             System.out.println("No entries found.");
         }
     }
