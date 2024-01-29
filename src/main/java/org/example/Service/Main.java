@@ -11,11 +11,12 @@ import org.slf4j.LoggerFactory;
  * Journaling app that provides a user with a writing prompt.
  */
 public class Main {
+    static InterfaceManager interfaceManager = new InterfaceManager();
 
     public static Logger log = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) throws InterfaceManagerException, IndexOutOfBoundsException, NoteException {
 
-        InterfaceManager interfaceManager = new InterfaceManager();
+      //  InterfaceManager interfaceManager = new InterfaceManager();
         Scanner sc = new Scanner(System.in);
         String userInput;
         System.out.println("Welcome to your daily journal!");
@@ -38,7 +39,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         String userInput;
-        InterfaceManager interfaceManager = new InterfaceManager();
+       // InterfaceManager interfaceManager = new InterfaceManager();
 
         userInput = sc.nextLine();
         interfaceManager.inputToPrompt(userInput);

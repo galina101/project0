@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/View/InterfaceManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -41,7 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "JUnit.NoteServiceTest.deleteEntryInvalidIndex.executor": "Run",
     "JUnit.NoteServiceTest.deleteEntryInvalidIndex2.executor": "Run",
     "JUnit.NoteServiceTest.executor": "Run",
@@ -57,7 +61,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "menuRefactor",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/A178393/IdeaProjects/Project0",
     "node.js.detected.package.eslint": "true",
@@ -133,10 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.NoteServiceTest.noteServiceSearch2" />
-        <item itemvalue="JUnit.NoteServiceTest" />
         <item itemvalue="JUnit.NoteServiceTest.noteServiceSearch" />
         <item itemvalue="JUnit.NoteServiceTest.noteServiceDeleteNote3" />
         <item itemvalue="JUnit.NoteServiceTest.deleteEntryInvalidIndex2" />
+        <item itemvalue="JUnit.NoteServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -206,25 +210,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
           <line>89</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/Main.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/Main.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
-          <line>79</line>
-          <properties class="org.example.Service.NoteService" method="searchEntries">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
