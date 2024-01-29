@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This is version of my project contains working search and completed unit tests.">
+    <list default="true" id="942bd460-8dfa-4ec4-9b9e-22bcc5dec014" name="Changes" comment="This version completed the refactor of the menu logic by making InterfaceManager static">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706305043187</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="This version completed the refactor of the menu logic by making InterfaceManager static">
+      <option name="closed" value="true" />
+      <created>1706540901082</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706540901082</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,14 +208,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This is version of my project without working search. Unit tests are also still pending a review." />
     <MESSAGE value="This is version of my project contains working search and completed unit tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="This is version of my project contains working search and completed unit tests." />
+    <MESSAGE value="This version completed the refactor of the menu logic by making InterfaceManager static" />
+    <option name="LAST_COMMIT_MESSAGE" value="This version completed the refactor of the menu logic by making InterfaceManager static" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Service/NoteService.java</url>
-          <line>89</line>
+          <line>94</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>

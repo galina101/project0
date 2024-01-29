@@ -86,6 +86,11 @@ public class NoteService {
            // System.out.println("currentEntry.getNoteText(): " + currentEntry.getNoteText());
 
             String currentEntryText = currentEntry.getNoteText();
+
+            //convert both strings to lower case for non-case sensitive search
+            searchWord = searchWord.toLowerCase();
+            currentEntryText = searchWord.toLowerCase();
+
             if (currentEntryText.contains(searchWord)) {
                 return currentEntry;
             }
