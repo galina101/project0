@@ -79,9 +79,10 @@ public class NoteService {
 
     public ArrayList<NoteEntry> searchEntries(String searchWord) {
 
-       List <NoteEntry> entriesFound = null;
+        ArrayList<NoteEntry> entriesFound = new ArrayList<>();
         NoteEntry currentEntry;
         ListIterator<NoteEntry> entriesFoundListIterator = entriesFound.listIterator();
+        //Reference: https://www.geeksforgeeks.org/listiterator-in-java/
 
         //Search
         for (int i = 0; i < entries.size(); i = i + 1) {
@@ -94,19 +95,15 @@ public class NoteService {
 
             //convert both strings to lower case for non-case sensitive search
             searchWord = searchWord.toLowerCase();
-            currentEntryText = searchWord.toLowerCase();
+            currentEntryText = currentEntryText.toLowerCase();
 
             if (currentEntryText.contains(searchWord)) {
                 //add entry to the array of NoteEntry
                 entriesFound.add(currentEntry);
             }
 
-            //Display
-            while (entriesFoundListIterator.hasNext()) {
-                System.out.println((entriesFoundListIterator.nextIndex() + 1) + ": " + entriesFoundListIterator.next());
-            }
         }
 
-        return null;
+        return entriesFound;
     }
 }

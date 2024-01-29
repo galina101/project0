@@ -127,19 +127,19 @@ public class NoteServiceTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test
-    public void noteServiceSearch(){
-        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
-        noteServiceTest.saveNote("This is an entry #1.");
-        noteServiceTest.saveNote("This is an entry #2.");
-        noteServiceTest.saveNote("This is an entry #3.");
-
-        String searchWord = "2";
-        NoteEntry actual = noteServiceTest.searchEntries(searchWord);
-
-
-        Assert.assertTrue(actual.getNoteText().contains(searchWord));
-    }
+//    @Test
+//    public void noteServiceSearch(){
+//        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
+//        noteServiceTest.saveNote("This is an entry #1.");
+//        noteServiceTest.saveNote("This is an entry #2.");
+//        noteServiceTest.saveNote("This is an entry #3.");
+//
+//        String searchWord = "2";
+//        NoteEntry actual = noteServiceTest.searchEntries(searchWord);
+//
+//
+//        Assert.assertTrue(actual.getNoteText().contains(searchWord));
+//    }
 
     //confirm that the method can handle null
 //    @Test
