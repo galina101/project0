@@ -38,6 +38,6 @@ public class NoteEntry {
     public String toString() {
         return  "Journal entry created on " + time + ".\n" +
                 "Journal entry content: "+ noteText + "\n" +
-                "=============================================================" + "\n";
+                "=============================================================";
     }
 }

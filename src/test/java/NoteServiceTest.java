@@ -1,13 +1,12 @@
 import org.example.Exception.NoteException;
 import org.example.Model.NoteEntry;
+import org.example.Service.Main;
 import org.example.Service.NoteService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.util.List;
 
-import static org.junit.Assert.assertNull;
 
 //Reference: https://www.tutorialspoint.com/junit/junit_using_assertion.htm
 
@@ -142,8 +141,8 @@ public class NoteServiceTest {
 //    }
 
     //confirm that the method can handle null
-//    @Test
-//    public void noteServiceSearch2(){
+//
+//    public void noteServiceSearch3(){
 //        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
 //        noteServiceTest.saveNote("This is an entry #1.");
 //        noteServiceTest.saveNote("This is an entry #2.");
@@ -170,6 +169,44 @@ public class NoteServiceTest {
 
         actual = noteServiceTest.getEntriesLength();
         Assert.assertEquals(actual, expected);
+    }
+
+
+@Test
+    public void searchMethodTest () {
+        List<NoteEntry> expected;
+        List<NoteEntry> actual;
+
+        List<NoteEntry> noteEntriesTest = noteServiceTest.getEntries();
+        String searchWord = "an";
+        NoteEntry currentEntry;
+        boolean containsExpectedSearchWord;
+        int actualSize;
+        int expectedSize;
+
+        noteServiceTest.saveNote("This is an entry #1.");
+        noteServiceTest.saveNote("This is an entry #2.");
+        noteServiceTest.saveNote("This is an entry #3.");
+
+        noteServiceTest.searchEntries(searchWord);
+
+        actual = noteServiceTest.searchEntries(searchWord);
+        Main.log.warn (actual.toString());
+
+        actualSize = actual.size();
+        Main.log.warn ("Actual size of an array " + actualSize);
+
+        expectedSize = 3;
+        //is search word equal to the getNoteText() of the object?
+        for (int i = 0; i < actual.size(); i = i + 1) {
+            currentEntry = actual.get(i);
+            String currentEntryText = currentEntry.getNoteText();
+            containsExpectedSearchWord = currentEntryText.contains("an");
+            //searchWord
+        }
+        //expected that 3 ArrayList<NoteEntry> are returned
+
+        Assert.assertEquals(actualSize,expectedSize);
     }
     //Delete method - User enters a double when int is requested
 //@Test

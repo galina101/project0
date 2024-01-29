@@ -67,13 +67,12 @@ public class NoteService {
     }
 
     //Reference: https://ioflood.com/blog/java-list-methods/
-    public List<NoteEntry> displayEntries() {
+    public void displayEntries() {
         ListIterator<NoteEntry> listIterator = entries.listIterator();
 
         while (listIterator.hasNext()) {
             System.out.println((listIterator.nextIndex() + 1) + ": " + listIterator.next());
         }
-        return null;
     }
 
 

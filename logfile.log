@@ -1,18 +1,32 @@
-WARN	2024-01-29 15:36:14,425	0	org.example.Service.Main	[main]	Random integer for today is 5
-WARN	2024-01-29 15:36:26,688	12263	org.example.Service.Main	[main]	Random integer for today is 1
-WARN	2024-01-29 15:36:46,126	31701	org.example.Service.Main	[main]	Currently searching for bacon in the following entry: Journal entry created on 2024-01-29 15:36:16.583.
-Journal entry content: java
+WARN	2024-01-29 16:41:21,824	0	org.example.Service.Main	[main]	We are about to delete 0
+WARN	2024-01-29 16:41:21,845	21	org.example.Service.Main	[main]	We are about to delete 0
+WARN	2024-01-29 16:41:21,847	23	org.example.Service.Main	[main]	We are about to delete 2
+WARN	2024-01-29 16:41:21,847	23	org.example.Service.Main	[main]	We are about to delete -1
+WARN	2024-01-29 16:41:21,848	24	org.example.Service.Main	[main]	We are about to delete 3
+WARN	2024-01-29 16:41:21,849	25	org.example.Service.Main	[main]	We are about to delete 0
+WARN	2024-01-29 16:41:21,857	33	org.example.Service.Main	[main]	Currently searching for an in the following entry: Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #1.
 =============================================================
-
-WARN	2024-01-29 15:37:02,929	48504	org.example.Service.Main	[main]	Currently searching for bacon in the following entry: Journal entry created on 2024-01-29 15:36:29.62.
-Journal entry content: javascript
+WARN	2024-01-29 16:41:21,858	34	org.example.Service.Main	[main]	Currently searching for an in the following entry: Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #2.
 =============================================================
-
-WARN	2024-01-29 15:37:59,969	105544	org.example.Service.Main	[main]	Currently searching for java in the following entry: Journal entry created on 2024-01-29 15:36:16.583.
-Journal entry content: java
+WARN	2024-01-29 16:41:21,858	34	org.example.Service.Main	[main]	Currently searching for an in the following entry: Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #3.
 =============================================================
-
-WARN	2024-01-29 15:38:00,437	106012	org.example.Service.Main	[main]	Currently searching for java in the following entry: Journal entry created on 2024-01-29 15:36:29.62.
-Journal entry content: javascript
+WARN	2024-01-29 16:41:21,858	34	org.example.Service.Main	[main]	Currently searching for an in the following entry: Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #1.
 =============================================================
-
+WARN	2024-01-29 16:41:21,858	34	org.example.Service.Main	[main]	Currently searching for an in the following entry: Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #2.
+=============================================================
+WARN	2024-01-29 16:41:21,858	34	org.example.Service.Main	[main]	Currently searching for an in the following entry: Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #3.
+=============================================================
+WARN	2024-01-29 16:41:21,858	34	org.example.Service.Main	[main]	[Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #1.
+=============================================================, Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #2.
+=============================================================, Journal entry created on 2024-01-29 16:41:21.85.
+Journal entry content: This is an entry #3.
+=============================================================]
+WARN	2024-01-29 16:41:21,858	34	org.example.Service.Main	[main]	Actual size of an array 3
